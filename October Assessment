@@ -1,0 +1,14 @@
+#Question 1
+#Student Name: Brendan Palmer
+
+taylorSwiftSongs = ["Love Story", "Blank Space", "Shake It Off", "Bad Blood", "Delicate", "You Belong To Me", "Wildest Dreams", "Red", "All Too Well", "22"]
+#Part (a)
+userSong = input("Please enter the song you're looking for:")
+#Part (b)
+
+if userSong in taylorSwiftSongs:
+    print(userSong, "is on the list of Taylor Swift songs at position", taylorSwiftSongs.index(userSong),"of 10 songs.")
+else:
+    print("Sorry,", userSong,"is not in the list of Taylor Swift songs.")
+#Part (c)
+#I know the 10 songs aren't a list method but I tried and it didn't work. This was my best attempt.
