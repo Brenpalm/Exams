@@ -1,0 +1,33 @@
+Q1
+#Student Name = Brendan Palmer
+num1 = int(input("Enter the first number:")) # (iv) numbers are input and stored here and the same for line 3
+num2 = int(input("Enter the second number:")) 
+name = input("Please enter your name:") # (ii) name input and stored here
+# (i) Currrently, the calculator can only add or subtract
+addoptions = ["a", "A"]
+suboptions = ["s", "S"]
+error = 1
+while error ==1: #(vii) while loop
+    print('Do you want me to (a)dd or (s)ubtract?')
+    choice = input()
+    if choice in addoptions: #(vi) changed to allow capital letters
+        print("Hello", name,". Welcome to the addition and subtraction calculator.") # (iii) out handled here and in line 13
+        print (num1, "+", num2, "=", num1+num2) #(v) in here and line 16 changed code to display the output in more detail
+        break
+    elif choice in suboptions:
+        print("Hello", name,". Welcome to the addition and subtraction calculator.")
+        print (num1, "-", num2, "=", num1-num2)
+        break
+    else: #(vii) shows invalid option if the user inputs anything that isn't s, S, a or A
+        print("Invalid option")
+
+Q2
+# Student Name = Brendan Plamer
+
+squared_numbers = []
+
+for x in range(21):
+    squared_numbers.append(x*x) # (i) calculates the first 20 square numbers and puts them in the list
+    print(squared_numbers) # (ii) prints the list on screen
+num = int(input("which number do you want to see (1-20)?")) #(iii) asks the user for the specific number they want to see and prints it.
+print(squared_numbers[num])
