@@ -12,3 +12,22 @@ elif (age>74): # (vi)
     print(name,"you are entitled to apply for a three-year driving licence.") # (iv)  
 else:
     print(name,"you are entitled to apply for a driving licence.")
+
+#Question 2
+#Student Name: Brendan Palmer
+import random
+cpuguess = random.randint(1, 50)
+userguess = int(input("Guess a number: "))
+while userguess != cpuguess:
+    if userguess > cpuguess:
+        print("Too high!")
+        userguess = int(input("Guess a number: "))
+    elif userguess < cpuguess:
+        print("Too low!")
+        userguess = int(input("Guess a number"))
+    else:
+        print("Invalid!")
+        userguess = int(input("Guess a number"))
+if userguess == cpuguess:
+    print("You won!")
+
