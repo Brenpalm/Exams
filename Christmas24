@@ -1,0 +1,44 @@
+# Question 1
+# Name: Brendan Palmer
+from random import choice
+
+fruits = ["apple", "cherry", "orange"]
+count = 0 # (v)
+cherryamt = 0 #(vii)
+appleamt = 0
+orangeamt = 0
+for x in range(0,100): # (vii)
+    random_fruit_1 = choice(fruits)
+    random_fruit_2 = choice(fruits) #(ii)
+    random_fruit_3 = choice(fruits) #(ii)
+    print("Random Fruit 1: ", random_fruit_1) # (i)
+    print("Random Fruit 2: ", random_fruit_2) # (ii)
+    print("Random Fruit 3: ", random_fruit_3) # (ii)
+    if random_fruit_1 == "cherry": # (iii)
+        print("The first fruit is cherry") # (iii)
+        count = count+1 #(v)
+    if random_fruit_1 == random_fruit_2: # (iv)
+        print("First pair match") # (iv)
+        count = count+1 #(v)
+    if count == 2: # (v)
+        print("First pair are cherries") # (v)
+    if random_fruit_1 == random_fruit_2 or random_fruit_2 == random_fruit_3 or random_fruit_1 == random_fruit_3: #(vi)
+        print("Matching pair") #(vi)
+    if random_fruit_1 == "cherry" or random_fruit_2 == "cherry" or random_fruit_3 == "cherry": # (vii)
+        cherryamt = cherryamt+1 #(vii)
+    if random_fruit_1 == "apple" or random_fruit_2 == "apple" or random_fruit_3 == "apple":
+        appleamt = appleamt+1
+    if random_fruit_1 == "orange" or random_fruit_2 == "orange" or random_fruit_3 == "orange":
+        orangeamt = orangeamt+1
+
+print(appleamt) #(vii)
+print(cherryamt)
+print(orangeamt)
+
+#Question 2
+#Name: Brendan Plamer
+print("Split Bill Calculator")
+billcost = float(input("How much is the bill?: "))
+billppl = int(input("How many people?: "))
+total = billcost/billppl
+print("You each owe ", total)
