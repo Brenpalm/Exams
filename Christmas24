@@ -20,7 +20,7 @@ for x in range(0,100): # (vii)
     if random_fruit_1 == random_fruit_2: # (iv)
         print("First pair match") # (iv)
         count = count+1 #(v)
-    if count == 2: # (v)
+    if random_fruit_1 == "cherry" and random_fruit_1 == random_fruit_2: # (v)
         print("First pair are cherries") # (v)
     if random_fruit_1 == random_fruit_2 or random_fruit_2 == random_fruit_3 or random_fruit_1 == random_fruit_3: #(vi)
         print("Matching pair") #(vi)
@@ -34,7 +34,6 @@ for x in range(0,100): # (vii)
 print(appleamt) #(vii)
 print(cherryamt)
 print(orangeamt)
-
 #Question 2
 #Name: Brendan Plamer
 print("Split Bill Calculator")
